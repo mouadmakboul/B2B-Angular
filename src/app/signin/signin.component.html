@@ -8,7 +8,7 @@
     />
   </head>
   <!-- Ajoutez cette div pour afficher l'alerte -->
-  <div class="bg-red-500 text-white p-4 mb-4" *ngIf="registrationError">
+  <div class="bg-red-500 text-white p-4 mb-4" *ngIf="registrationError && !success">
     <strong>Erreur lors de la connexion:</strong> {{ registrationError }}
   </div>
 
@@ -116,7 +116,7 @@
               </p>
               <!-- component -->
               <div
-                *ngIf="success"
+                *ngIf="success "
                 class="flex min-h-screen items-center justify-center bg-gray-100"
               >
                 <div class="rounded-lg bg-gray-50 px-16 py-14">
@@ -145,16 +145,16 @@
                   <h3
                     class="my-4 text-center text-3xl font-semibold text-gray-700"
                   >
-                    Congratuation!!!
+                    Congratulation!!!
                   </h3>
                   <p class="w-[230px] text-center font-normal text-gray-600">
-                    Your order have been taken and is being attended to
+                    Authentification has been loaded succesfuly
                   </p>
                   <button
                     class="mx-auto mt-10 block rounded-xl border-4 border-transparent bg-orange-400 px-6 py-3 text-center text-base font-medium text-orange-100 outline-8 hover:outline hover:duration-300"
                     routerLink="/contrat"
                   >
-                    Go to Plate-forme
+                    Go to Plate-forme...
                   </button>
                 </div>
               </div>
