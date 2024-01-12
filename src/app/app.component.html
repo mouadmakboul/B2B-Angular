@@ -4,103 +4,88 @@
   <button class="outline-double mr-3 ml-3 p-2 hover:bg-green-300 transition rounded-full mb-3 duration-300 relative justify-center items-center " (click)="redirectToSection()">See Our B2B Project </button>
 </div>
 
+<!-- component -->
+<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
 
-<body class="min-h-screen flex items-center justify-center h-70">
-<div class="bg-gradient-to-b from-slate-300 justify-center  to-slate-200">
-  <div class="text-center">
-    <h1 class="mx-50 font-bold hover:text-blue-500 hover:underline">
-      Check Out Our team ✔✨
-    </h1>
-  </div>
+
+<section class="relative  bg-blueGray-50">
+<div class="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75">
+        <div class="absolute top-0 w-full h-full bg-center bg-cover" style="
+            background-image: url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1267&amp;q=80');
+          ">
+          <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
+        </div>
+        <div class="container relative mx-auto">
+          <div class="items-center flex flex-wrap">
+            <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+              <div class="pr-12">
+                <h1 class="text-white font-semibold text-5xl">
+                  Your Business starts with us. From To Company...
+                </h1>
+                <p class="mt-4 text-lg text-blueGray-200">
+                  Une plateforme B2B (Business-to-Business) est une infrastructure en ligne qui facilite les transactions commerciales entre entreprises. Contrairement aux plateformes B2C (Business-to-Consumer) qui ciblent les consommateurs individuels, les plateformes B2B se concentrent sur les relations commerciales entre entreprises.
+
+                  Caractéristiques clés d'une plateforme B2B :
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px" style="transform: translateZ(0px)">
+          <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+            <polygon class="text-blueGray-200 fill-current" points="2560 0 2560 100 0 100"></polygon>
+          </svg>
+        </div>
+      </div>
+      <section class="pb-10 bg-blueGray-200 -mt-24">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap">
+            <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                <div class="px-4 py-5 flex-auto">
+                  <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold">Transactions Commerciales</h6>
+                  <p class="mt-2 mb-4 text-blueGray-500">
+                    La principale fonction d'une plateforme B2B est de faciliter les transactions commerciales entre les entreprises, que ce soit pour l'achat de biens, de services, ou d'autres transactions commerciales.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-4/12 px-4 text-center">
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                <div class="px-4 py-5 flex-auto">
+                  <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-lightBlue-400">
+                    <i class="fas fa-retweet"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold">Catalogue de Produits/Services</h6>
+                  <p class="mt-2 mb-4 text-blueGray-500">
+                    Les plateformes B2B fournissent souvent un catalogue en ligne détaillé des produits ou services offerts par les entreprises participantes, permettant aux acheteurs de parcourir et de comparer les offres.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="pt-6 w-full md:w-4/12 px-4 text-center">
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                <div class="px-4 py-5 flex-auto">
+                  <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400">
+                    <i class="fas fa-fingerprint"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold">Communication Entre Entreprises</h6>
+                  <p class="mt-2 mb-4 text-blueGray-500">
+                    Les outils de communication intégrés permettent aux entreprises de discuter, de négocier et de finaliser des transactions directement sur la plateforme.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+           <footer class="relative  pt-8 pb-6 mt-1">
   
-  <div
-    class="max-w-md mx-auto mt-5  bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl"
-  >
-    <div class="md:flex ">
-      <div class="md:flex-shrink-0 ml-4 mb-5">
-        <img
-          class="h-48  w-full object-cover md:h-full md:w-48 transform transition-transform duration-300 hover:scale-110"
-          src="assets/ProTof.PNG"
-          alt="Man looking at item at a store"
-        />
-      </div>
-      <div class="p-8 mb-3">
-        <div
-          id="nom" class="uppercase tracking-wide text-sm text-indigo-500 font-semibold"
-        >
-          Mouad   Makboul
-        </div>
-        <a
-          href="#"
-          class="block mt-1 text-lg leading-tight font-medium text-black hover:underline"
-          >Futur DEV Engineer</a
-        >
-        <p class="mt-2 text-gray-500">
-          Futur Ingénier axé sur la qualité logicielle et dévelopement des
-          logiecls spécialité Spring boot et Angular ,React Js ... Java thinking
-          ♨
-        </p>
-        <cite> Lauréat Emsi</cite>
-      </div>
-    </div>
-    
-    <div class="md:flex">
-      <div class="md:flex-shrink-0 mb-5 ml-3">
-        <img
-          class="h-48 ml-3 w-full object-cover rounded-3xl md:h-full md:w-48 hover:scale-110 transform transition-transform duration-300"
-          src="assets/YOUSSEG.JPG"
-          alt="Man looking at item at a store"
-        />
-      </div>
-      <div class="p-8">
-        <div
-          class="uppercase tracking-wide text-sm text-indigo-500 font-semibold"
-        >
-          Youssef Lachgar
-        </div>
-        <a
-          href="#"
-          class="block mt-1 text-lg leading-tight font-medium text-black hover:underline"
-          >Futur DEV Engineer
-        </a>
-        <p class="mt-2 text-gray-500">
-          Futur Ingénier axé sur la qualité logicielle et dévelopement des
-          logiecls ,spécialité UI/UX📍
-        </p>
-        <cite> Lauréat Emsi</cite>
-      </div>
-    </div>
-    <div class="md:flex">
-      <div class="md:flex-shrink-0 mb-5 ml-3">
-        <img
-          class="h-48 w-full ml-3 object-cover rounded-3xl md:h-full md:w-48 hover:scale-110 transform transition-transform duration-300"
-          src="assets/BADR.JPG"
-          alt="Man looking at item at a store"
-        />
-      </div>
-      <div class="p-8">
-        <div
-          class="uppercase tracking-wide text-sm text-indigo-500 font-semibold"
-        >
-          BADR KHALIL
-        </div>
-        <a
-          href="#"
-          class="block mt-1 text-lg leading-tight font-medium text-black hover:underline"
-          >Futur DEV Engineer</a
-        >
-        <p class="mt-2 text-gray-500">
-          Futur Ingénier axé sur la qualité logicielle et dévelopement des
-          logiecls ,Orientaion Databases et backend Process 🛢
-        </p>
-        <cite> Lauréat Emsi</cite>
-      </div>
-    </div>
-  </div>
-</div>
-</body>
-</div>
-
+</footer>
+      
+      
 <router-outlet>
 
 </router-outlet>
