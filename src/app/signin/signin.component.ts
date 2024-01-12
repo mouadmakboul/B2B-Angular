@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+
 import { AuthService } from '../auth.service';
 import { Router } from '@angular/router';
+import { Component, AfterViewInit, OnDestroy, ViewChild, ElementRef } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-signin',
@@ -14,10 +16,21 @@ export class SigninComponent {
   password: string = '';
   constructor(
     private router: Router,
+    private viewportScroller: ViewportScroller, 
+    private el: ElementRef,
     
      
     private authService: AuthService
   ) {}
+  redirectToSection() {
+    this.router.navigate(['/contrat']).then(() => {
+      const targetElement = this.el.nativeElement;
+
+      // Activer le défilement fluide
+      targetElement.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    });
+  }
+  
 
   // Exemple dans le composant TypeScript
 register() {

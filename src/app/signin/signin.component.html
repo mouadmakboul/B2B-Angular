@@ -151,11 +151,12 @@
                     Authentification has been loaded succesfuly
                   </p>
                   <button
-                    class="mx-auto mt-10 block rounded-xl border-4 border-transparent bg-orange-400 px-6 py-3 text-center text-base font-medium text-orange-100 outline-8 hover:outline hover:duration-300"
-                    routerLink="/contrat"
-                  >
-                    Go to Plate-forme...
-                  </button>
+                  class="mx-auto mt-10 block rounded-xl border-4 border-transparent bg-orange-400 px-6 py-3 text-center text-base font-medium text-orange-100 outline-8 hover:outline hover:duration-300"
+                  (click)="redirectToSection()"
+                >
+                  Go to Plate-forme...
+                </button>
+                
                 </div>
               </div>
             </form>

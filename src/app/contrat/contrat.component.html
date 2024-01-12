@@ -1,0 +1,168 @@
+<!-- component -->
+<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+
+
+<section class="relative pt-12 bg-blueGray-50 w-50">
+<div class="items-center flex flex-wrap">
+  <div class="w-50 md:w-4/12 ml-auto mr-auto px-4">
+    <img alt="..." class="max-w-full rounded-lg shadow-lg" src="https://th.bing.com/th/id/R.8bd496ca4c6af333846d2d9c332c4699?rik=muBjA9NLZoK6ew&pid=ImgRaw&r=0&sres=1&sresct=1">
+  </div>
+  <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+    <div class="md:pr-12">
+      <div class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300 mt-8">
+        <i class="fas fa-rocket text-xl"></i>
+      </div>
+      <h3 class="text-3xl font-semibold">Build your own contract</h3>
+      <p class="mt-4 text-lg leading-relaxed text-blueGray-500">
+        A contract is a deal between two companies to know the process of
+        reacting from company and to compant two can be changed by time.
+      </p>
+      <ul class="list-none mt-6">
+        <li class="py-2">
+          <div class="flex items-center">
+            <div>
+              <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"><i class="fas fa-fingerprint"></i></span>
+            </div>
+            <div>
+              <h4 class="text-blueGray-500">
+                Carefully created contrat
+              </h4>
+            </div>
+          </div>
+        </li>
+        <li class="py-2">
+          <div class="flex items-center">
+            <div>
+              <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"><i class="fab fa-html5"></i></span>
+            </div>
+            <div>
+              <h4 class="text-blueGray-500">Make it attractive</h4>
+            </div>
+          </div>
+        </li>
+        <li class="py-2">
+          <div class="flex items-center">
+            <div>
+              <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"><i class="far fa-paper-plane"></i></span>
+            </div>
+            <div>
+              <h4 class="text-blueGray-500">Dynamic components</h4>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<footer class="relative  pt-8 pb-6 mt-8">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-wrap items-center md:justify-between justify-center">
+      <div class="w-full md:w-6/12 px-4 mx-auto text-center">
+       
+      </div>
+    </div>
+  </div>
+</footer>
+</section>
+<!-- component -->
+<div class="h-screen w-screen flex items-center justify-center bg-stone-100">
+    <div class="p-10 rounded shadow-sm bg-stone-50 max-w-lg w-2/3">
+        <div class="mb-6 p-10 bg-white -m-10">
+            <h1 class="font-bold text-2xl text-stone-300">Formulaire de contact</h1>
+        </div>
+        <!-- contrat.component.html -->
+<form (ngSubmit)="onSubmit()" #contratForm="ngForm">
+    <div class="flex flex-col mb-4">
+      <label>Nom
+        <span class="block text-xs font-light text-stone-400">Put in a name or serie number for contrat </span>
+      </label>
+      <input [(ngModel)]="contrat.name"  name="nom" placeholder="Put in a name or serie number for contrat" class="mt-2 px-4 py-2 shadow rounded"/>
+    </div>
+    <div class="flex flex-col mb-4">
+      <label>Chiffre d'affaire
+        <span class="block text-xs font-light text-stone-400">instructions ici </span>
+      </label>
+      <input [(ngModel)]="contrat.chifrreAffaire" name="chifrreAffaire" placeholder="Min chiffre d'affaire à accepter" class="mt-2 px-4 py-2 shadow rounded"/>
+    </div>
+    <div class="flex flex-col mb-4">
+      <label>Duree contrat
+        <span class="block text-xs font-light text-stone-400">instructions </span>
+      </label>
+      <input [(ngModel)]="contrat.dureeContrat"  name="dureeContrat" placeholder="Conditions time" class="mt-2 px-4 py-2 shadow rounded"/>
+    </div>
+    <div class="flex flex-col mb-4">
+      <label>Etat actuel
+        <span class="block text-xs font-light text-stone-400">instructions  </span>
+      </label>
+      <input [(ngModel)]="contrat.frozen" name="frozen" placeholder="Conditions time" class="mt-2 px-4 py-2 shadow rounded"/>
+    </div>
+    <div class="mt-6 flex gap-6">
+      <button type="submit" class="rounded-full bg-orange-300 py-4 px-10 font-bold text-white shadow hover:bg-blue-500">Envoyer</button>
+      <button type="reset" class="rounded-full bg-transparent py-4 px-10 font-bold text-stone-400 border border-stone-200 hover:border-orange-300 hover:text-orange-300">Réinitialiser</button>  
+    </div>
+  </form>
+  <div *ngIf="contratCreeAvecSucces">
+  <!-- Mettez le chemin de votre image et utilisez les valeurs du contrat ici -->
+  <div
+  class="font-regular relative mt-5 block w-full max-w-screen-md rounded-lg bg-green-500 px-4 py-4 text-base text-white"
+  data-dismissible="alert"
+>
+  <div class="absolute top-4 left-4">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+      class="mt-px h-6 w-6"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+        clip-rule="evenodd"
+      ></path>
+    </svg>
+  </div>
+  <div class="mt-3 ml-8 mr-12">
+    <h5 class="block font-sans text-xl font-semibold leading-snug tracking-normal text-white antialiased">
+      Success
+    </h5>
+    <p class="mt-2 block font-sans text-base font-normal leading-relaxed text-white antialiased">
+     Next step is to create a company client
+    </p>
+  </div>
+  <div
+    data-dismissible-target="alert"
+    data-ripple-dark="true"
+    class="absolute top-3 right-3 w-max rounded-lg transition-all hover:bg-white hover:bg-opacity-20"
+  >
+    <div role="button" class="w-max rounded-lg p-1">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18L18 6M6 6l12 12"
+        ></path>
+      </svg>
+    </div>
+  </div>
+</div>
+
+  
+    </div>
+</div>
+<!-- component -->
+<div  *ngIf="contratCreeAvecSucces"  class="flex min-h-screen w-full items-center justify-center bg-gray-100 ">
+  <!-- component -->
+  <button  class="group relative h-15 w-60 overflow-hidden rounded-2xl bg-green-500 text-lg font-bold text-white" routerLink="entreprises">
+    Create Client Company
+    <div class="absolute inset-0 h-full w-full scale-0 rounded-2xl transition-all duration-300 group-hover:scale-100 group-hover:bg-white/30"></div>
+  </button>
+</div>

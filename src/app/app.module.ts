@@ -6,6 +6,11 @@ import { AcceuilComponent } from './acceuil/acceuil.component';
 import { HttpClientModule } from '@angular/common/http'; // Assurez-vous d'importer ceci
 import { FormsModule } from '@angular/forms';
 import { SigninComponent } from './signin/signin.component';
+import { ContratComponent } from './contrat/contrat.component';
+import { EntrepriseComponent } from './entreprise/entreprise.component';
+import { ClientsComponent } from './clients/clients.component';
+
+
 
 
 @NgModule({
@@ -13,6 +18,11 @@ import { SigninComponent } from './signin/signin.component';
     AppComponent,
     AcceuilComponent,
     SigninComponent,
+    ContratComponent,
+    EntrepriseComponent,
+    ClientsComponent,
+   
+   
     
   ],
   imports: [BrowserModule, HttpClientModule, FormsModule, AppRoutingModule],
