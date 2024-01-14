@@ -53,9 +53,13 @@
                 <td class="p-2 border-r">
                     
                 </td>
-                <td class="p-2 border-r">
-                    <input type="text" class="border p-1">
-                </td>
+               <!-- all-entreprise.component.html -->
+<!-- ... -->
+<td class="p-2 border-r">
+    <input type="text" class="border p-1" [(ngModel)]="searchTerm" (ngModelChange)="applyFilter()" placeholder="Search...">
+</td>
+<!-- ... -->
+
                 <td class="p-2 border-r">
                     <input type="text" class="border p-1">
                 </td>
@@ -71,71 +75,20 @@
                 
                 
             </tr>
-            <tr class="bg-gray-100 text-center border-b text-sm text-gray-600">
+            <tr *ngFor="let entreprise of filteredEntreprises" class="text-center border-b text-sm text-gray-600">
                 <td class="p-2 border-r">
                     <input type="checkbox">
                 </td>
-                <td class="p-2 border-r">1</td>
-                <td class="p-2 border-r">John Doe</td>
-                <td class="p-2 border-r">johngmail.com</td>
-                <td class="p-2 border-r">Sydney, Australia</td>
+                <td class="p-2 border-r">{{ entreprise.id }}</td>
+                <td class="p-2 border-r">{{ entreprise.nom }}</td>
+                <td class="p-2 border-r">{{ entreprise.email }}</td>
+                <td class="p-2 border-r">{{ entreprise.adresse }}</td>
                 <td>
                     <a href="#" class="bg-blue-500 p-2 text-white hover:shadow-lg text-xs font-thin">Edit</a>
-                    <a href="#" class="bg-red-500 p-2 text-white hover:shadow-lg text-xs font-thin">Remove</a>
+                    <button (click)="deleteEntreprise(entreprise.id)" class="bg-red-500 p-2 text-white hover:shadow-lg text-xs font-thin">Remove</button>
                 </td>
             </tr>
-            <tr class="bg-gray-100 text-center border-b text-sm text-gray-600">
-                <td class="p-2 border-r">
-                    <input type="checkbox">
-                </td>
-                <td class="p-2 border-r">2</td>
-                <td class="p-2 border-r">Adam Smith</td>
-                <td class="p-2 border-r">adamgmail.com</td>
-                <td class="p-2 border-r">Sydney, Australia</td>
-                <td>
-                    <a href="#" class="bg-blue-500 p-2 text-white hover:shadow-lg text-xs font-thin">Edit</a>
-                    <a href="#" class="bg-red-500 p-2 text-white hover:shadow-lg text-xs font-thin">Remove</a>
-                </td>
-            </tr>
-            <tr class="bg-gray-100 text-center border-b text-sm text-gray-600">
-                <td class="p-2 border-r">
-                    <input type="checkbox">
-                </td>
-                <td class="p-2 border-r">3</td>
-                <td class="p-2 border-r">Jean Doe</td>
-                <td class="p-2 border-r">jeangmail.com</td>
-                <td class="p-2 border-r">Sydney, Australia</td>
-                <td>
-                    <a href="#" class="bg-blue-500 p-2 text-white hover:shadow-lg text-xs font-thin">Edit</a>
-                    <a href="#" class="bg-red-500 p-2 text-white hover:shadow-lg text-xs font-thin">Remove</a>
-                </td>
-            </tr>
-            <tr class="bg-gray-100 text-center border-b text-sm text-gray-600">
-                <td class="p-2 border-r">
-                    <input type="checkbox">
-                </td>
-                <td class="p-2 border-r">3</td>
-                <td class="p-2 border-r">Jean Doe</td>
-                <td class="p-2 border-r">jeangmail.com</td>
-                <td class="p-2 border-r">Sydney, Australia</td>
-                <td>
-                    <a href="#" class="bg-blue-500 p-2 text-white hover:shadow-lg text-xs font-thin">Edit</a>
-                    <a href="#" class="bg-red-500 p-2 text-white hover:shadow-lg text-xs font-thin">Remove</a>
-                </td>
-            </tr>
-            <tr class="bg-gray-100 text-center border-b text-sm text-gray-600">
-                <td class="p-2 border-r">
-                    <input type="checkbox">
-                </td>
-                <td class="p-2 border-r">3</td>
-                <td class="p-2 border-r">Jean Doe</td>
-                <td class="p-2 border-r">jeangmail.com</td>
-                <td class="p-2 border-r">Sydney, Australia</td>
-                <td>
-                    <a href="#" class="bg-blue-500 p-2 text-white hover:shadow-lg text-xs font-thin">Edit</a>
-                    <a href="#" class="bg-red-500 p-2 text-white hover:shadow-lg text-xs font-thin">Remove</a>
-                </td>
-            </tr>
+           
         </tbody>
     </table>
 </div>

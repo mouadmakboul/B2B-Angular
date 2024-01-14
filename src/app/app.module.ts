@@ -4,11 +4,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AcceuilComponent } from './acceuil/acceuil.component';
 import { HttpClientModule } from '@angular/common/http'; // Assurez-vous d'importer ceci
-import { FormsModule } from '@angular/forms';
+
 import { SigninComponent } from './signin/signin.component';
 import { ContratComponent } from './contrat/contrat.component';
 import { EntrepriseComponent } from './entreprise/entreprise.component';
-import { ClientsComponent } from './clients/clients.component';
+import { FormsModule } from '@angular/forms';
+
+import { AllEntrepriseComponent } from './all-entreprise/all-entreprise.component';
 
 
 
@@ -20,7 +22,8 @@ import { ClientsComponent } from './clients/clients.component';
     SigninComponent,
     ContratComponent,
     EntrepriseComponent,
-    ClientsComponent,
+    
+    AllEntrepriseComponent,
    
    
     

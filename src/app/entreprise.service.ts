@@ -25,4 +25,10 @@ export class EntrepriseService {
     // Effectuer la requête POST avec les en-têtes spécifiés
     return this.http.post<Entreprise>(this.apiUrl, entreprise, httpOptions);
   }
+  getEntreprises(): Observable<any> {
+    return this.http.get(this.apiUrl);
+  }
+  deleteEntreprise(id: number): Observable<any> {
+    return this.http.delete(`${this.apiUrl}/${id}`);
+  }
 }
