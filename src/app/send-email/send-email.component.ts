@@ -19,19 +19,17 @@ export class SendEmailComponent {
   constructor(private emailService: EmailService) {}
 
   onSubmit() {
+    
     const userEmail = this.formData.email;
   
     this.emailService.sendEmail(userEmail, this.formData).subscribe(
       response => {
-        console.log(response);
-  
-        // Ajoutez une vérification pour le type de réponse
-        if (response instanceof HttpResponse) {
-          console.log('Response is an instance of HttpResponse');
-          // Manipulez la réponse de votre backend ici
+        // Vérifiez si la réponse contient un message indiquant le succès
+        if (response ) {
+          alert('Message envoyé avec succès');
         } else {
-          console.log('Response is not an instance of HttpResponse. Likely a non-JSON response.');
-          console.log(response); // Vous pouvez inspecter la réponse complète ici
+          // Affichez une alerte générique en cas de réponse inattendue
+          alert('Erreur inattendue. Veuillez réessayer.');
         }
       },
       error => {
@@ -39,8 +37,12 @@ export class SendEmailComponent {
         // Gérez les erreurs ici
       }
     );
+    alert("message envoyé avec succés")
   }
   
-}
+  
+  }
+  
+
 
 
