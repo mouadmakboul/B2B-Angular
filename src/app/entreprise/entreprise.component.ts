@@ -12,6 +12,7 @@ import { Entreprise } from '../Models/entreprise.model';
 })
 export class EntrepriseComponent {
   entreprise: Entreprise = {
+    id: 2 ,
     nom: '',
     adresse: '',
     tel: '',

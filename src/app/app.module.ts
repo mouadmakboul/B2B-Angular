@@ -11,6 +11,7 @@ import { EntrepriseComponent } from './entreprise/entreprise.component';
 import { FormsModule } from '@angular/forms';
 
 import { AllEntrepriseComponent } from './all-entreprise/all-entreprise.component';
+import { SendEmailComponent } from './send-email/send-email.component';
 
 
 
@@ -24,6 +25,7 @@ import { AllEntrepriseComponent } from './all-entreprise/all-entreprise.componen
     EntrepriseComponent,
     
     AllEntrepriseComponent,
+         SendEmailComponent,
    
    
     

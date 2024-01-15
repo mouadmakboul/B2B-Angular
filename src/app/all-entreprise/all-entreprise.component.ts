@@ -1,6 +1,7 @@
 // all-entreprise.component.ts
 import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { EntrepriseService } from '../entreprise.service';
+import { Entreprise } from '../Models/entreprise.model';
 
 @Component({
   selector: 'app-all-entreprise',
@@ -12,14 +13,24 @@ export class AllEntrepriseComponent implements OnInit {
   entreprises: any[] | undefined;
   filteredEntreprises: any[] | undefined;
   searchTerm: string = '';
+  selectedEntreprise: Entreprise | null = null;
+  isEditing = false;
+  editEntrepriseId: number | null = null;
+  editedEntreprise: Entreprise = {} as Entreprise;
 
   constructor(private entrepriseService: EntrepriseService, private cdr: ChangeDetectorRef) { }
 
   ngOnInit(): void {
-    this.entrepriseService.getEntreprises().subscribe(data => {
-      this.entreprises = data;
-      this.filteredEntreprises = data; // Initialize filtered data with all data
-    });
+    this.entrepriseService.getEntreprises().subscribe(
+      data => {
+        console.log(data); // Vérifie la sortie dans la console du navigateur
+        this.entreprises = data;
+        this.filteredEntreprises = data; // Initialise les données filtrées avec toutes les données
+      },
+      error => {
+        console.error('Erreur dans ngOnInit:', error);
+      }
+    );
   }
 
   applyFilter(): void {
@@ -53,5 +64,7 @@ export class AllEntrepriseComponent implements OnInit {
       alert('Deletion canceled.');
     }
   }
+  
+ 
 }
 
