@@ -7,6 +7,7 @@ import { ContratComponent } from './contrat/contrat.component';
 import { EntrepriseComponent } from './entreprise/entreprise.component';
 import { AllEntrepriseComponent } from './all-entreprise/all-entreprise.component';
 import { SendEmailComponent } from './send-email/send-email.component';
+import { AuthorComponent } from './author/author.component';
 
 
 
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'entreprises', component: EntrepriseComponent },
   { path: 'allentreprises', component: AllEntrepriseComponent },
   { path: 'email', component: SendEmailComponent },
+  { path: 'author', component: AuthorComponent },
  
   
   

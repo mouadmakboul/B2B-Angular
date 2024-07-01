@@ -91,16 +91,19 @@
       </label>
       <input [(ngModel)]="contrat.dureeContrat"  name="dureeContrat" placeholder="Conditions time" class="mt-2 px-4 py-2 shadow rounded"/>
     </div>
+    
     <div class="flex flex-col mb-4">
       <label>Etat actuel
         <span class="block text-xs font-light text-stone-400">instructions  </span>
       </label>
       <input [(ngModel)]="contrat.frozen" name="frozen" placeholder="Conditions time" class="mt-2 px-4 py-2 shadow rounded"/>
     </div>
+    
     <div class="mt-6 flex gap-6">
       <button type="submit" class="rounded-full bg-orange-300 py-4 px-10 font-bold text-white shadow hover:bg-blue-500">Envoyer</button>
       <button type="reset" class="rounded-full bg-transparent py-4 px-10 font-bold text-stone-400 border border-stone-200 hover:border-orange-300 hover:text-orange-300">Réinitialiser</button>  
     </div>
+    
   </form>
   <div *ngIf="contratCreeAvecSucces">
   <!-- Mettez le chemin de votre image et utilisez les valeurs du contrat ici -->
@@ -154,6 +157,7 @@
     </div>
   </div>
 </div>
+
 
   
     </div>

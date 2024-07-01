@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AllEntrepriseComponent } from './all-entreprise/all-entreprise.component';
 import { SendEmailComponent } from './send-email/send-email.component';
+import { AuthorComponent } from './author/author.component';
 
 
 
@@ -26,6 +27,7 @@ import { SendEmailComponent } from './send-email/send-email.component';
     
     AllEntrepriseComponent,
          SendEmailComponent,
+         AuthorComponent,
    
    
     
