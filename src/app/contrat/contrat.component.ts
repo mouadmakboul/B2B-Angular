@@ -15,6 +15,9 @@ export class ContratComponent {
     private contratService: ContratService,
     private router: Router  // Injectez le service Router
   ) {}
+  printthisPage(){
+    window.print();
+  }
 
   onSubmit(): void {
     this.contratService.createContrat(this.contrat).subscribe(
@@ -29,4 +32,5 @@ export class ContratComponent {
       }
     );
   }
+  
 }
