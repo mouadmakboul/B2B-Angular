@@ -1,0 +1,10 @@
+.dark-mode {
+    background-color: #ff0000; /* Red background for dark mode */
+    color: #ffffff; /* White text for dark mode */
+  }
+  
+  html.dark {
+    background-color: #ff0000; /* Red background for dark mode */
+    color: #ffffff; /* White text for dark mode */
+  }
+  

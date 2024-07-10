@@ -1,4 +1,5 @@
 import { Router } from '@angular/router';
+import {Renderer2} from '@angular/core';
 
 
 import { ViewportScroller } from '@angular/common';
@@ -20,15 +21,18 @@ export class AcceuilComponent {
   username: string = '';
   email: string = '';
   password: string = '';
+  isDarkMode: boolean = false;
   registrationError: string | null = null;
 
   @ViewChild('targetSection') targetSection!: ElementRef;
   private intervalId: any;
+  
 
   constructor(
     private router: Router,
     private el: ElementRef,
     private viewportScroller: ViewportScroller,
+    private renderer: Renderer2,
      
     private authService: AuthService
   ) {}
@@ -52,6 +56,14 @@ export class AcceuilComponent {
         this.registrationError = "Erreur lors de l'inscription: " + error.message;
       }
     );
+  }
+  toggleDarkMode(): void {
+    this.isDarkMode = !this.isDarkMode;
+    if (this.isDarkMode) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
   }
   
 
