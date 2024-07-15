@@ -14,35 +14,30 @@ export class SendEmailComponent {
     name: '',
     email: '',
     phone: ''
-  }; 
+  };
+  isLoading = false; // State to manage loader visibility
 
   constructor(private emailService: EmailService) {}
 
   onSubmit() {
-    
+    this.isLoading = true; // Show loader
+
     const userEmail = this.formData.email;
-  
+
     this.emailService.sendEmail(userEmail, this.formData).subscribe(
       response => {
-        // Vérifiez si la réponse contient un message indiquant le succès
-        if (response ) {
+        this.isLoading = false; // Hide loader
+
+        if (response) {
           alert('Message envoyé avec succès');
         } else {
-          // Affichez une alerte générique en cas de réponse inattendue
           alert('Erreur inattendue. Veuillez réessayer.');
         }
       },
       error => {
+        this.isLoading = false; // Hide loader
         console.error(error);
-        // Gérez les erreurs ici
       }
     );
-    alert("message envoyé avec succés")
   }
-  
-  
-  }
-  
-
-
-
+}

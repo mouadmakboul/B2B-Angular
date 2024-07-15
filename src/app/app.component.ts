@@ -14,6 +14,7 @@ export class AppComponent implements AfterViewInit, OnDestroy {
   ngAfterViewInit(): void {
     this.animateNom();
   }
+  
 
   ngOnDestroy(): void {
     this.clearInterval();
