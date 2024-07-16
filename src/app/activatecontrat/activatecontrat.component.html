@@ -6,6 +6,7 @@
 
 <div class="bg-gray-100 py-32 px-10 min-h-screen">
     <div class="bg-white p-10 md:w-3/4 lg:w-1/2 mx-auto">
+      <h1 class="center py-3"> Formulaire d'activation Contrat</h1>
 
         <form (submit)="onSubmit()">
             <div class="flex items-center mb-5">
@@ -50,16 +51,18 @@
             <div class="text-right">
                 <button class="py-3 px-8 bg-green-400 text-white font-bold" (click)="showAlert()">Activate in Specified Date</button>
             </div>
-            <div class="group inline-block py-5">
-              <button class="outline-none focus:outline-none border px-3 py-1 bg-white rounded-sm flex items-center min-w-32" (click)=" showActivationAlert()">
-                <span class="pr-1 font-semibold flex-1">Attach this Contrat to a specified Company Client</span>
+            <div class="pl-20 group inline-block py-5">
+              <button class=" pl-8 focus:outline-none border px-3 py-1 bg-white rounded-sm flex items-center min-w-32" (click)=" showActivationAlert()">
+                <span class=" font-semibold flex-1">Attach this Contrat to a specified Company Client</span>
                 <span>
                   <svg class="fill-current h-4 w-4 transform group-hover:-rotate-180 transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
                   </svg>
                 </span>
               </button>
-              <ul class="dropdown-menu bg-white border rounded-sm transform scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top">
+             
+              
+              <ul class="dropdown-menu bg-white border rounded-sm transform scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top ">
                 <button class="rounded-sm px-3 py-1 hover:bg-gray-100" (click)="selectClient('Capgemini TS')">Capgemini TS</button>
                 <button class="rounded-sm px-3 py-1 hover:bg-gray-100" (click)="selectClient('ATOS')">ATOS</button>
                 <button class="rounded-sm px-3 py-1 hover:bg-gray-100" (click)="selectClient('Maroc TELECOM')">Maroc TELECOM</button>
@@ -78,6 +81,7 @@
                 <button class="rounded-sm px-3 py-1 hover:bg-gray-100" (click)="selectClient('INETUM')">INETUM</button>
               </ul>
             </div>
+            
             
             <!-- Alerte -->
             <div class="fixed inset-0 flex items-center py-5 justify-center bg-gray-800 bg-opacity-50" *ngIf="showAlertFlag">
@@ -231,9 +235,16 @@
           <a href="#!" class="font-medium text-purple-600 hover:text-purple-700 focus:text-purple-800 duration-300 transition ease-in-out text-sm">Revision checkin</a>
           <a href="#!" class="font-medium text-purple-600 hover:text-purple-700 focus:text-purple-800 duration-300 transition ease-in-out text-sm">13 / 07 / 2024</a>
         </div>
-        <p class="text-gray-700 mb-6">CHeck IN Inputs.  Summary</p>
+       
         
       </div>
     </div>
   </li>
 </ol>
+<main class="grid   place-items-center bg-gray-100">
+  <!-- component -->
+  <button class="group relative h-12 w-48 overflow-hidden rounded-lg bg-white text-lg shadow">
+    <div class="absolute inset-0 w-3 bg-amber-400 transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+    <button routerLink="/check" class="relative text-black group-hover:text-white">Check in Inputs!</button>
+  </button>
+</main>

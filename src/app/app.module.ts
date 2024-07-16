@@ -18,6 +18,11 @@ import { CardInformationsComponent } from './card-informations/card-informations
 import { ActivatecontratComponent } from './activatecontrat/activatecontrat.component';
 import { AttachcontratComponent } from './attachcontrat/attachcontrat.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CategoryupComponent } from './categoryup/categoryup.component';
+import { PrduitcardComponent } from './prduitcard/prduitcard.component';
+import { CheckinputsComponent } from './checkinputs/checkinputs.component';
+import { AddProductPopupComponent } from './add-product-popup/add-product-popup.component';
+import { Product1Component } from './product1/product1.component';
 
 
 
@@ -37,6 +42,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
          CardInformationsComponent,
          ActivatecontratComponent,
          AttachcontratComponent,
+         CategoryupComponent,
+         PrduitcardComponent,
+         CheckinputsComponent,
+         AddProductPopupComponent,
+         Product1Component,
    
    
     

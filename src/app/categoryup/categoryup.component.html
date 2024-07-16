@@ -1,0 +1,172 @@
+<!-- component -->
+<!-- Create By Joker Banny -->
+<div class="min-h-screen bg-gray-50 flex justify-center items-center py-20">
+    <div class="md:px-4 md:grid md:grid-cols-2 lg:grid-cols-3 gap-5 space-y-4 md:space-y-0">
+      <div class="max-w-sm bg-white px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
+        <h3 class="mb-3 text-xl font-bold text-indigo-600">Automobile Category</h3>
+        <div class="relative">
+          <img class="w-full rounded-xl" src="../../assets/automobile.jpg" alt="Colors" />
+          <p class="absolute top-0 bg-yellow-300 text-gray-800 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">Contractuel</p>
+        </div>
+        <h1 class="mt-4 text-gray-800 text-2xl font-bold cursor-pointer">Automobile</h1>
+        <div class="my-4">
+          <div class="flex space-x-1 items-center">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mb-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </span>
+            <p>1:34:23 Minutes</p>
+          </div>
+          <div class="flex space-x-1 items-center">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mb-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </span>
+            <p>5 Clients</p>
+          </div>
+          <div class="flex space-x-1 items-center">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mb-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+              </svg>
+            </span>
+            
+           
+          </div>
+          <div class="relative mt-4">
+            <div>
+                <button id="toggleDropdown" class="flex items-center justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
+                    Select Client
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 12a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                        <path fill-rule="evenodd" d="M15 10a5 5 0 11-10 0 5 5 0 0110 0zm-1 0a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+            <!-- Dropdown menu items (hidden by default) -->
+            <div id="dropdownMenu" class="absolute z-10 mt-1 w-full rounded-md bg-white shadow-lg origin-top-left divide-y divide-gray-100 ring-1 ring-black ring-opacity-5 hidden">
+                <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Capgemini</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Atos</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Atos</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Atos</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Atos</a>
+                </div>
+            </div>
+        </div>
+          <button routerLink="/product" class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg">Gestion Produit de cette Category</button>
+        </div>
+      </div>
+      <div class="max-w-sm bg-white px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
+        <h3 class="mb-3 text-xl font-bold text-indigo-600">Beauty Category</h3>
+        <div class="relative">
+          <img class="w-full rounded-xl" src="../../assets/beaute.jpg" alt="Colors" />
+          <p class="absolute top-0 bg-yellow-300 text-gray-800 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">Contractuel</p>
+          <p class="absolute top-0 right-0 bg-yellow-300 text-gray-800 font-semibold py-1 px-3 rounded-tr-lg rounded-bl-lg">%20 Discount ON contract</p>
+        </div>
+        <h1 class="mt-4 text-gray-800 text-2xl font-bold cursor-pointer">Beauty Catgory</h1>
+        <div class="my-4">
+          <div class="flex space-x-1 items-center">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mb-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </span>
+            <p>1:34:23 Minutes</p>
+          </div>
+          <div class="flex space-x-1 items-center">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mb-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </span>
+            <p>7 clients</p>
+          </div>
+          <div class="flex space-x-1 items-center">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mb-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+              </svg>
+            </span>
+           
+          </div>
+          <button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg">Gestion Produit de cette Category </button>
+        </div>
+      </div>
+      <div class="max-w-sm bg-white px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
+        <h3 class="mb-3 text-xl font-bold text-indigo-600">Clothes Category</h3>
+        <div class="relative">
+          <img class="w-full rounded-xl" src="../../assets/clothes.jpg" alt="Colors" />
+          <p class="absolute top-0 bg-yellow-300 text-gray-800 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">50% Discount On contrat </p>
+        </div>
+        <h1 class="mt-4 text-gray-800 text-2xl font-bold cursor-pointer">Clothes Category</h1>
+        <div class="my-4">
+          <div class="flex space-x-1 items-center">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mb-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </span>
+            <p>1:34:23 Minutes</p>
+          </div>
+          <div class="flex space-x-1 items-center">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mb-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </span>
+            <p>8 Clients</p>
+          </div>
+          <div class="flex space-x-1 items-center">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mb-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+              </svg>
+            </span>
+           
+          </div>
+          <button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg">Gestion Produit de cette Category</button>
+        </div>
+      </div>
+      <div class="max-w-sm bg-white px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
+        <h3 class="mb-3 text-xl font-bold text-indigo-600">Electronics Field</h3>
+        <div class="relative">
+          <img class="w-full rounded-xl" src="../../assets/electronics.jpg" alt="Colors" />
+          <p class="absolute top-0 bg-yellow-300 text-gray-800 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">Contractuel</p>
+        </div>
+        <h1 class="mt-4 text-gray-800 text-2xl font-bold cursor-pointer">Electronics Field and Components</h1>
+        <div class="my-4">
+          <div class="flex space-x-1 items-center">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mb-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </span>
+            <p>1:34:23 Minutes</p>
+          </div>
+          <div class="flex space-x-1 items-center">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mb-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </span>
+            <p>12 Clients</p>
+          </div>
+          <div class="flex space-x-1 items-center">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mb-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+              </svg>
+            </span>
+           
+          </div>
+          <button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg">Gestion Produit de cette Category</button>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </div>

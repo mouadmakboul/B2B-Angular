@@ -12,6 +12,10 @@ import { ProduitsComponent } from './produits/produits.component';
 import { CardInformationsComponent } from './card-informations/card-informations.component';
 import { ActivatecontratComponent } from './activatecontrat/activatecontrat.component';
 import { AttachcontratComponent } from './attachcontrat/attachcontrat.component';
+import { CategoryupComponent } from './categoryup/categoryup.component';
+import { CheckinputsComponent } from './checkinputs/checkinputs.component';
+import { Product1Component } from './product1/product1.component';
+
 
 
 
@@ -27,6 +31,11 @@ const routes: Routes = [
   { path: 'author', component: AuthorComponent },
   { path: 'activecontrat', component: ActivatecontratComponent },
   { path: 'attach', component: AttachcontratComponent },
+  { path: 'category', component: CategoryupComponent },
+  { path: 'check', component: CheckinputsComponent },
+  { path: 'product', component: ProduitsComponent },
+  { path: 'product1', component: Product1Component },
+  
  
   
   
