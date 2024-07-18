@@ -15,6 +15,7 @@ import { AttachcontratComponent } from './attachcontrat/attachcontrat.component'
 import { CategoryupComponent } from './categoryup/categoryup.component';
 import { CheckinputsComponent } from './checkinputs/checkinputs.component';
 import { Product1Component } from './product1/product1.component';
+import { LastcomponentComponent } from './lastcomponent/lastcomponent.component';
 
 
 
@@ -35,6 +36,7 @@ const routes: Routes = [
   { path: 'check', component: CheckinputsComponent },
   { path: 'product', component: ProduitsComponent },
   { path: 'product1', component: Product1Component },
+  { path: 'product2', component: LastcomponentComponent },
   
  
   

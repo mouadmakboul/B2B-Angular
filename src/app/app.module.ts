@@ -23,6 +23,7 @@ import { PrduitcardComponent } from './prduitcard/prduitcard.component';
 import { CheckinputsComponent } from './checkinputs/checkinputs.component';
 import { AddProductPopupComponent } from './add-product-popup/add-product-popup.component';
 import { Product1Component } from './product1/product1.component';
+import { LastcomponentComponent } from './lastcomponent/lastcomponent.component';
 
 
 
@@ -47,6 +48,7 @@ import { Product1Component } from './product1/product1.component';
          CheckinputsComponent,
          AddProductPopupComponent,
          Product1Component,
+         LastcomponentComponent,
    
    
     

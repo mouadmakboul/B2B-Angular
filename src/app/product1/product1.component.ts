@@ -9,7 +9,7 @@ import { EmailService } from '../email.service';
 export class Product1Component {
   formData: any = {
     subject: 'test',
-    message: 'http://localhost:4200/product1',
+    message: 'http://localhost:4200/product2',
     name: '',
     email: 'mouadmakboul8@gmail.com',
     phone: ''
